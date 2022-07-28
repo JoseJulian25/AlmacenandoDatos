@@ -1,0 +1,50 @@
+@media (min-width: 375px) and (max-width: 768px){
+    main{
+        height: auto;
+    }
+
+    .form{
+        flex-direction: column;
+    }
+
+    .mainCard{
+        margin: 1rem 0;
+        width: 70vw;
+    }
+
+    .form__input, .form__boton, .form__fecha{
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px){
+    .form{
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+
+    .form__input, .form__fecha{
+        width: calc(50% - 2rem)
+    }
+
+    .form__boton{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px){
+    
+
+    .mainCard{
+        width: 40vw;
+    }
+
+    .form{
+        flex-wrap: nowrap;
+    }
+
+    .form__boton{
+        width: 30%;
+    }
+}
